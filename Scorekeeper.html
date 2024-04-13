@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Score Keeper</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
+    />
+    <style>
+      .winner {
+        color: green;
+      }
+      .loser {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="column">
+        <div class="column is-half is-offset-one-quarter">
+          <div class="card">
+            <figure class="image is-2by1">
+              <img
+                src="https://images.unsplash.com/photo-1609710228159-0fa9bd7c0827?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Table-Tennis.jpeg"
+              />
+            </figure>
+            <header class="card-header">
+              <p class="card-header-title">PING PONG SCORE KEEPER</p>
+              <button class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </header>
+            <div class="card-content">
+              <div class="content">
+                <h1 class="Title is-size-1">
+                  <span id="p1Display">0</span> to <span id="p2Display">0</span>
+                </h1>
+                <p class="subtitle">
+                  Use the buttons below to keep updating the score.
+                </p>
+                <div class="select is-rounded">
+                  <select id="winScore">
+                    <option id="3">3</option>
+                    <option id="5">5</option>
+                    <option id="7">7</option>
+                    <option id="10">10</option>
+                    <option id="12">12</option>
+                    <option id="15">15</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <footer class="card-footer">
+              <button id="p1Score" class="button is-primary card-footer-item">
+                +1 P1 Score
+              </button>
+              <button id="p2Score" class="button is-link card-footer-item">
+                +1 P2 Score
+              </button>
+              <button id="reset" class="button is-warning card-footer-item">
+                Reset
+              </button>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="Scorekeeper.js"></script>
+  </body>
+</html>
